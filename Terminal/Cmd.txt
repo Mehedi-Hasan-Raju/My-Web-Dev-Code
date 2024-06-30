@@ -1,1 +1,31 @@
+ls - list files
+pwd - print work directory 
+clear - clean screen
+cd - change directory
+    cd .. - back
+    cd./- in same directory
+    cd file_name - goto new folder - (relative path)
 
+/ - root directory
+~ - home directory
+    cd /
+    cd ~
+
+mkdie file_name - to creat folder
+
+Manual Command ------------------------------
+    man ls - gives info
+    man mkdir - gives info mkdir Command
+    ls -l
+    ls -a
+    ls -ls
+
+Touch Command
+touch index.html
+touch app.js
+
+Delete Files & Folder --------------------------
+
+rm - remove file 
+rmdir - remove empty folder
+rm-rf - remove any folder
