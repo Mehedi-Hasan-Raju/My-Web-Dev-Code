@@ -1,1 +1,13 @@
+git config --global user.name "Mehedi"
+git config --global user.email "youreadingme@email.lol"
+git config --list
 
+//Clone --
+
+git clone <link>
+
+
+git status
+git add . - git add <file_name>
+git commit -m "s"
+git push origin master
