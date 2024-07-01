@@ -1,6 +1,6 @@
 import './App.css';
 import LikeButton from './likeButton';
-
+import Counter from './Counter';
 
 function App() {
 
