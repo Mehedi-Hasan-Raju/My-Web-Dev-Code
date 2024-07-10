@@ -18,6 +18,7 @@ useEffect(() => {
     console.log(jsonResponse);
     setJoke({setup: jsonResponse.setup, punchline: jsonResponse.punchline});
 }
+   
 getFirstJoke();
 }, []);
 
