@@ -61,3 +61,14 @@ add column city varchar(25) default "delhi";
 
 alter table user                                            // this is the delete command
 drop column city;
+
+
+drop table post;                                         //this commend will delete full table
+
+
+alter table user                                       // this command will  used  for rename the table name
+rename to instaUser;
+
+truncate table instauser;                              //this command will be delete all the data of the table
+
+
