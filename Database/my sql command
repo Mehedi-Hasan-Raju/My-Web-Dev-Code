@@ -1,1 +1,56 @@
 
+create database instagram;                                         //this command use for creating database
+
+use Instagram;                                                    // this command use for slect database which database you want to  use
+
+create table user (                                               // this is the step how you creat tabil 
+   id int,
+   age int,
+   name varchar(30) not null,
+   email varchar(50) unique,
+   followers int default 0,
+   following int,
+   constraint check (age >= 13),
+   primary key(id)
+);
+
+
+insert into user                                                 // this command use for insert values into table
+values
+(4, 176,"edam","aedam@yahoo.in", 123,145),
+(5, 14,"tob", "boeb123@yahoo.in",124,234),
+(6, 18,"rasey","caesey@yahoo.in", 342,234);
+
+
+
+select name, age, followers                                     //this command used for working with some condation                     
+from user 
+order by age asc;
+
+
+
+select age, max(followers)
+from user
+group by age
+having max(followers) > 100
+order by age desc;
+
+
+update user                                                    //this command is use for updating tabil
+set followers = 600
+where age = 14;
+
+delete from user                                              //this is the deleting command
+where age = 14;
+
+
+select * from user;                                           // this is for showing tabile
+
+set sql_safe_updates = 0;
+
+create table post (
+   id int,
+   content varchar (100),
+   user_id int,
+   foreign key (user_id) references user (id)
+);
