@@ -54,3 +54,10 @@ create table post (
    user_id int,
    foreign key (user_id) references user (id)
 );
+
+
+alter table user                                            //this command for add column 
+add column city varchar(25) default "delhi";
+
+alter table user                                            // this is the delete command
+drop column city;
